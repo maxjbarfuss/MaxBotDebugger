@@ -1,0 +1,141 @@
+# depslib dependency file v1.0
+1456884171 source:/home/pi/Development/MaxBotAHRSDebugger/main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<chrono>
+	<thread>
+	<unistd.h>
+	<termios.h>
+	<MessageBroker.h>
+	<StandardTypes.pb.h>
+	<Vector.pb.h>
+	<Velocity.pb.h>
+	<Range.pb.h>
+	<Pose.pb.h>
+
+1456802430 /home/pi/Development/MaxBotMessages/include/MessageBroker.h
+	<thread>
+	<tuple>
+	<chrono>
+	<vector>
+	<mutex>
+	<google/protobuf/message.h>
+	<zmq.hpp>
+	<IMessageBroker.h>
+	<Multicast.h>
+
+1443899153 /home/pi/zeromq-4.1.3/include/zmq.hpp
+	<zmq.h>
+	<algorithm>
+	<cassert>
+	<cstring>
+	<string>
+	<exception>
+	<vector>
+	<iterator>
+	<chrono>
+	<tuple>
+
+1439808522 /home/pi/zeromq-4.1.3/include/zmq.h
+	<errno.h>
+	<stddef.h>
+	<stdio.h>
+	<winsock2.h>
+	<inttypes.h>
+	<stdint.h>
+
+1456802430 /home/pi/Development/MaxBotMessages/include/IMessageBroker.h
+	<functional>
+	<google/protobuf/message.h>
+
+1451531779 /home/pi/Development/MaxBotMessages/include/Multicast.h
+	<string>
+	<vector>
+	<sys/types.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	<netinet/in.h>
+	<stdio.h>
+	<stdlib.h>
+	<ifaddrs.h>
+	<unistd.h>
+	<fcntl.h>
+
+1456883225 /home/pi/Development/MaxBotMessages/include/StandardTypes.pb.h
+	<string>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/generated_message_util.h>
+	<google/protobuf/message.h>
+	<google/protobuf/repeated_field.h>
+	<google/protobuf/extension_set.h>
+	<google/protobuf/unknown_field_set.h>
+	"Stamp.pb.h"
+
+1456883225 /home/pi/Development/MaxBotMessages/include/Stamp.pb.h
+	<string>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/generated_message_util.h>
+	<google/protobuf/message.h>
+	<google/protobuf/repeated_field.h>
+	<google/protobuf/extension_set.h>
+	<google/protobuf/unknown_field_set.h>
+
+1456883225 /home/pi/Development/MaxBotMessages/include/Vector.pb.h
+	<string>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/generated_message_util.h>
+	<google/protobuf/message.h>
+	<google/protobuf/repeated_field.h>
+	<google/protobuf/extension_set.h>
+	<google/protobuf/unknown_field_set.h>
+	"Stamp.pb.h"
+
+1456883225 /home/pi/Development/MaxBotMessages/include/Velocity.pb.h
+	<string>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/generated_message_util.h>
+	<google/protobuf/message.h>
+	<google/protobuf/repeated_field.h>
+	<google/protobuf/extension_set.h>
+	<google/protobuf/unknown_field_set.h>
+	"Stamp.pb.h"
+	"Vector.pb.h"
+
+1456883225 /home/pi/Development/MaxBotMessages/include/Range.pb.h
+	<string>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/generated_message_util.h>
+	<google/protobuf/message.h>
+	<google/protobuf/repeated_field.h>
+	<google/protobuf/extension_set.h>
+	<google/protobuf/unknown_field_set.h>
+	"Stamp.pb.h"
+	"StandardTypes.pb.h"
+
+1456883225 /home/pi/Development/MaxBotMessages/include/Pose.pb.h
+	<string>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/generated_message_util.h>
+	<google/protobuf/message.h>
+	<google/protobuf/repeated_field.h>
+	<google/protobuf/extension_set.h>
+	<google/protobuf/unknown_field_set.h>
+	"Stamp.pb.h"
+	"Vector.pb.h"
+
+1456965933 source:/home/pi/Development/MaxBotDebugger/main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<chrono>
+	<thread>
+	<unistd.h>
+	<termios.h>
+	<MessageBroker.h>
+	<StandardTypes.pb.h>
+	<Vector.pb.h>
+	<Velocity.pb.h>
+	<Range.pb.h>
+	<Pose.pb.h>
+
