@@ -35,7 +35,7 @@ char getch() {
 
 int main()
 {
-    std::ofstream myFile ("gyro.csv");
+    std::ofstream myFile ("magnetometer.csv");
     MaxBotMessages::MessageBroker messageBroker(1);
 
 //    messageBroker.Subscribe("POS2", [&](std::string s){
@@ -61,16 +61,28 @@ int main()
 
     bool exit = false;
 
-    double x = 0, y = 0, z = 0;
-    messageBroker.Subscribe("AHRS", [&](std::string s){
+    double w = 0, x = 0, y = 0, z = 0;
+//    messageBroker.Subscribe("AHRS", [&](std::string s){
+//        if (exit) return;
+//        MaxBotMessages::QuaternionStamped q;
+//        q.ParseFromString(s);
+//        w = q.quaternion().w();
+//        x = q.quaternion().x();
+//        y = q.quaternion().y();
+//        z = q.quaternion().z();
+//        std::cout << std::setw(15) << w << "," << std::setw(15) << x << std::setw(15) << y << std::setw(15) << z << std::endl;
+//        //myFile << std::setw(15) << w << "," << std::setw(15) << x << "," << std::setw(15) << y << "," << std::setw(15) << z << std::endl;
+//    });
+
+    messageBroker.Subscribe("TEST", [&](std::string s){
         if (exit) return;
         MaxBotMessages::Vector3Stamped v;
         v.ParseFromString(s);
         x = v.vector().x();
         y = v.vector().y();
         z = v.vector().z();
-        std::cout << std::setw(15) << x << std::setw(15) << y << std::setw(15) << z << std::endl;
-        myFile << std::setw(15) << x << "," << std::setw(15) << y << "," << std::setw(15) << z << std::endl;
+        std::cout << std::setw(15) << w << "," << std::setw(15) << x << std::setw(15) << y << std::setw(15) << z << std::endl;
+        //myFile << std::setw(15) << w << "," << std::setw(15) << x << "," << std::setw(15) << y << "," << std::setw(15) << z << std::endl;
     });
 
     double linear = 0;

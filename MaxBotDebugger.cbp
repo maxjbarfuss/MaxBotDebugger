@@ -2,17 +2,18 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="MaxBotAHRSDebugger" />
+		<Option title="MaxBotDebugger" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/MaxBotAHRSDebugger" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/MaxBotDebugger" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-std=c++14" />
 				</Compiler>
 				<Linker>
 					<Add library="/home/pi/Development/MaxBotMessages/bin/Debug/libMaxBotMessages.a" />
